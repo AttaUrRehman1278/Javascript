@@ -23,3 +23,4 @@ switch (new Date().getDay()) {
         day = "Saturday";
 }
 console.log(day);
+console.log(new Date().getDay())
