@@ -6,6 +6,7 @@ const obj = {
 
 // let key;
 for (let i = 0; i < Object.keys(obj).length ; i++) {
-    const element = obj[i];
-    console.log(i)
+    const element = Object.values(obj[i]);
+    console.log(element)
+    // console.log(Object.values(obj))
 }
