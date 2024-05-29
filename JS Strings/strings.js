@@ -1,2 +1,3 @@
-let a = " CODE With HARRY 1000  "
+let a = ` CODE With HARRY 1000  `
 console.log(a.trim())
+
