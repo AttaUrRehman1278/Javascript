@@ -6,6 +6,9 @@ if (a == true){
     if (age > 18){
         alert("You can drive!")
     }
+    else if (age < 0){
+        console.error("Wrong Input")
+    }
     else{
         alert("You are underaged. You can't drive!")
     }
