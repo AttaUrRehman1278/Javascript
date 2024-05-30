@@ -3,8 +3,9 @@ if (a == true){
 
     let age = prompt("Enter your age: ");
     
-    if (age > 18){
-        alert("You can drive!")
+    if (age > 4){
+        // alert("You can drive!")
+        location.replace("https://google.com");
     }
     else if (age < 0){
         console.error("Wrong Input")
