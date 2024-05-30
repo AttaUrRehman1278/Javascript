@@ -18,7 +18,6 @@ let a = parseInt(prompt('Enter a number: '));
 
 /* FInding factorial using for loop
 
-*/
 let fact = a;
 for (let i = a; i > 0; i--){
     if(i == 1){
@@ -29,3 +28,9 @@ for (let i = a; i > 0; i--){
     }
 }
 console.log(fact)
+
+*/
+
+/* Finding factorial using reduce method
+
+*/
