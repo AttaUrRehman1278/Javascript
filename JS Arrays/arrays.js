@@ -6,8 +6,9 @@
 // } while(b != 0);
 // console.log(a)
 
-let a = [1, 3, 5, 4];
-b = a.map(x =>{
-    return x ** 2;
+let a = [1, 2, 3, 4, 5];
+
+let b = a.map(e => {
+    return e**3
 })
 console.log(b)
