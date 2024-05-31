@@ -34,3 +34,10 @@ console.log(fact)
 /* Finding factorial using reduce method
 
 */
+// let a = 8;
+function factorial(number){
+    let arr = Array.from(Array(number + 1).keys());
+    let z = arr.slice(1,).reduce((x , y)=> x * y)
+    return z
+}
+console.log(factorial(a));
