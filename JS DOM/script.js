@@ -5,7 +5,10 @@ if (a == true){
     
     if (age > 4){
         // alert("You can drive!")
-        location.replace("https://google.com");
+        // location.href = "https://google.com";
+        console.log(typeof(document))
+        console.log(typeof(window))
+
     }
     else if (age < 0){
         console.error("Wrong Input")
