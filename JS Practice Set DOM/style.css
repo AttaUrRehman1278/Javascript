@@ -1,9 +1,16 @@
-button{
+/* button{
     height: 30px;
     width: 70px;
-    /* padding: 40px; */
+    padding: 40px;
     margin: 40px;
     color: white;
     background-color: blue;
     border-radius: 5px;
+} */
+.bookmarks a{
+    display: flex;
+    text-decoration: none;
+}
+.bookmarks a:hover{
+    text-decoration: dotted;
 }
