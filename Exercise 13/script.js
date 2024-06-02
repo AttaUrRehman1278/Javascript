@@ -8,7 +8,7 @@ function createCard(title, cName, views, monthsOld, duration, thumbnail){
     cName = cards.append("Code With Harry");
     views = cards.append("20k");
     monthsOld = cards.append("2 months");
-    duration = cards.append("31:30\n");
+    duration = cards.append("31:30");
     // cards.append("\n");
 }
 
