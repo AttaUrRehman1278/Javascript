@@ -1,7 +1,9 @@
 .card{
-    /* max-width: 90vw;
+    max-width: 90vw;
     margin: auto;
-    padding: 30px; */
+    /* padding: 30px; */
     display: grid;
-    grid-template-rows: (1fr, 1fr);
+    grid: 10px/ auto auto;
+    gap: 70px;
+    border : 2px solid white;
 }
