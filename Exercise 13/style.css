@@ -8,17 +8,18 @@
     padding: 5px;
     border-radius: 10px;
 }
-
-.card .image img{
-    border-radius: 5px;
+.image img{
+    border-radius: 5px;}
+.image{
     position: relative;
 }
 
 .card .image .capsule{
     position:absolute;
     bottom: 4px;
-    left: 0;
-    font-size: 15px;
+    right: 0;
+    font-size: 10px;
+    background-color: black;
 }
 .card .text h1{
     font-size: 20px;
