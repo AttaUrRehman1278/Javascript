@@ -1,15 +1,16 @@
-const cards = document.querySelector(".card");
 function createCard(title, cName, views, monthsOld, duration, thumbnail){
-    var url = "codeWithHarry.webp";
-    thumbnail = new Image();
-    thumbnail.src = url;
-    thumbnail = cards.appendChild(thumbnail);
-    title = cards.append("Sigma Web Development | Tutorial # 73");
-    cName = cards.append("Code With Harry");
-    views = cards.append("20k");
-    monthsOld = cards.append("2 months");
-    duration = cards.append("31:30");
-    // cards.append("\n");
+    let html = `<div class="card">
+    <div class="image">
+        <img src="${thumbnail}" alt="">
+        <div class="capsule">${duration}</div>
+    </div>
+    <div class="text">
+        <h1>${title}</h1>
+        <p>${cName} . ${views} views . ${monthsOld} months old </p>
+    </div>
+</div>`
+document.querySelector(".container").innerHTML = document.querySelector(".container").innerHTML + html
 }
+createCard("Code WIth Harry", "CodeWithHarry", 10000, 3, "31:33", "codeWithHarry.webp")
 
 
