@@ -1,14 +1,23 @@
-let purchase = 0;
-let bank_balance = 1000;
-let phone_price = 100;
-let accessories = 10;
+const SPENDING_THRESHOLD = 200;
+const TAX_RATE = 0.2;
+const PHONE_PRICE = 99.99;
+const PHONE_ACCESSORIES = 9.9;
 
-while(true){
-    if (purchase <= 900){
-        purchase = purchase + phone_price + accessories;
-    }
-    else{
-        break;
-    }
+var bank_balance = 1000;
+var amount = 0;
+
+function calculateTaxRate() {
+    return amount * TAX_RATE;
 }
-console.log(purchase)
+
+function formattedAmount() {
+    return "$" + toString(amount);
+}
+
+function calculatePurchase() {
+    amount = amount + PHONE_PRICE;
+    if (amount < SPENDING_THRESHOLD){
+        amount = amount + PHONE_ACCESSORIES;
+    }
+    return amount;
+}
