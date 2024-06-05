@@ -7,6 +7,7 @@
     gap: 10px;
     padding: 5px;
     border-radius: 10px;
+    margin-top: 10px;
 }
 .image img{
     border-radius: 5px;}
@@ -16,10 +17,13 @@
 
 .card .image .capsule{
     position:absolute;
-    bottom: 4px;
-    right: 0;
-    font-size: 10px;
-    background-color: black;
+    bottom: 6px;
+    right: 2px;
+    border-radius: 3px;
+    font-size: 11px;
+    background-color: rgb(17, 9, 9);
+    padding: 2px;
+    opacity: 0.9;
 }
 .card .text h1{
     font-size: 20px;
