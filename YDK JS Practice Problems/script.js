@@ -1,2 +1,5 @@
 let purchase = 0;
-console.log(purchase)
+let bank_balance = 1000;
+let phone_price = 100;
+let accessories = 10;
+
