@@ -8,10 +8,21 @@
 function loadScript(src, callback){
     let script = document.createElement("script");
     script.src = src;
-    script.onload = callback("Atta Ur Rehman")
+    script.onload = callback("Atta Ur Rehman", fn)
     document.head.append(script)
 }
-loadScript("https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.min.js" , (script) =>{
-    alert("script is loaded")
-    alert("script.src")
-})
+// loadScript("https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.min.js" , (script) =>{
+//     alert("script is loaded")
+//     alert("script.src")
+// })
+
+const fn = ()=>{
+    console.log("Nothing!")
+}
+
+const callback = (arg, fn) =>{
+    console.log(arg)
+    fn()
+}
+
+loadScript("https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.min.js", callback)
